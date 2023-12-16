@@ -20,29 +20,29 @@ public class Board extends ChessGameBoard {
 		for(int i=0;i<8;++i) {
 			board[1][i] = new Pawn(Piece.Team.BLACK,getNewID(),i,1);
 		}
-		//add the other pieces
-		board[0][0] = new Piece(Piece.Team.BLACK, Piece.Type.ROOK,getNewID(),0,0);
-		board[0][7] = new Piece(Piece.Team.BLACK, Piece.Type.ROOK,getNewID(),7,0);
-		board[0][1] = new Piece(Piece.Team.BLACK, Piece.Type.KNIGHT,getNewID(),1,0);
-		board[0][6] = new Piece(Piece.Team.BLACK, Piece.Type.KNIGHT,getNewID(),6,0);
-		board[0][2] = new Piece(Piece.Team.BLACK, Piece.Type.BISHOP,getNewID(),2,0);
-		board[0][5] = new Piece(Piece.Team.BLACK, Piece.Type.BISHOP,getNewID(),5,0);
-		board[0][3] = new Piece(Piece.Team.BLACK, Piece.Type.QUEEN,getNewID(),3,0);
-		board[0][4] = new Piece(Piece.Team.BLACK, Piece.Type.KING,getNewID(),4,0);
+		//add the other pieces -- commented out x, y positions because they are misaligned with constructor. change if they were important but became obsolete
+		board[0][0] = new Piece(Piece.Team.BLACK, Piece.Type.ROOK,getNewID());//,0,0);
+		board[0][7] = new Piece(Piece.Team.BLACK, Piece.Type.ROOK,getNewID());//,7,0);
+		board[0][1] = new Piece(Piece.Team.BLACK, Piece.Type.KNIGHT,getNewID());//,1,0);
+		board[0][6] = new Piece(Piece.Team.BLACK, Piece.Type.KNIGHT,getNewID());//,6,0);
+		board[0][2] = new Piece(Piece.Team.BLACK, Piece.Type.BISHOP,getNewID());//,2,0);
+		board[0][5] = new Piece(Piece.Team.BLACK, Piece.Type.BISHOP,getNewID());//,5,0);
+		board[0][3] = new Piece(Piece.Team.BLACK, Piece.Type.QUEEN,getNewID());//,3,0);
+		board[0][4] = new Piece(Piece.Team.BLACK, Piece.Type.KING,getNewID());//,4,0);
 
 		//add white pawns
 		for(int i=0;i<8;++i) {
 			board[6][i] = new Pawn(Piece.Team.WHITE,getNewID(),i,6);
 		}
 		//add the other pieces
-		board[7][0] = new Piece(Piece.Team.WHITE, Piece.Type.ROOK,getNewID(),0,7);
-		board[7][7] = new Piece(Piece.Team.WHITE, Piece.Type.ROOK,getNewID(),7,7);
-		board[7][1] = new Piece(Piece.Team.WHITE, Piece.Type.KNIGHT,getNewID(),1,7);
-		board[7][6] = new Piece(Piece.Team.WHITE, Piece.Type.KNIGHT,getNewID(),6,7);
-		board[7][2] = new Piece(Piece.Team.WHITE, Piece.Type.BISHOP,getNewID(),2,7);
-		board[7][5] = new Piece(Piece.Team.WHITE, Piece.Type.BISHOP,getNewID(),5,7);
-		board[7][3] = new Piece(Piece.Team.WHITE, Piece.Type.QUEEN,getNewID(),3,7);
-		board[7][4] = new Piece(Piece.Team.WHITE, Piece.Type.KING,getNewID(),4,7);
+		board[7][0] = new Piece(Piece.Team.WHITE, Piece.Type.ROOK,getNewID());//,0,7);
+		board[7][7] = new Piece(Piece.Team.WHITE, Piece.Type.ROOK,getNewID());//,7,7);
+		board[7][1] = new Piece(Piece.Team.WHITE, Piece.Type.KNIGHT,getNewID());//,1,7);
+		board[7][6] = new Piece(Piece.Team.WHITE, Piece.Type.KNIGHT,getNewID());//,6,7);
+		board[7][2] = new Piece(Piece.Team.WHITE, Piece.Type.BISHOP,getNewID());//,2,7);
+		board[7][5] = new Piece(Piece.Team.WHITE, Piece.Type.BISHOP,getNewID());//,5,7);
+		board[7][3] = new Piece(Piece.Team.WHITE, Piece.Type.QUEEN,getNewID());//,3,7);
+		board[7][4] = new Piece(Piece.Team.WHITE, Piece.Type.KING,getNewID());//,4,7);
 
 	}
 	

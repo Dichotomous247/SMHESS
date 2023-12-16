@@ -5,15 +5,20 @@ public class ChessGame {
 		// TODO Auto-generated method stub
 		ChessGameBoard b = new ChessGameBoard();
 
-		for(int i=0; i< 20; i++) {
+		/*for(int i=0; i< 20; i++) {
 			System.out.println("BOARD MOVE " + i);
 			System.out.print(b.printCurrentBoard());
 			b.nextMoveAll();		
 			System.out.println("NEXT MOVES");
 			System.out.print(b.printProposedBoard());
 			b.applyNextMoves();
-		}
-							
+		}*/
+
+		System.out.println(b.printCurrentBoard());
+		b.nextMoveAll();
+		b.applyNextMoves();
+		System.out.println(b.printCurrentBoard());
+
 	}
 	
 }
