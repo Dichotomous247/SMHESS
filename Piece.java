@@ -66,7 +66,7 @@ public class Piece {
 		// override setPiece to hide it.
 	}	
 	
-	public boolean[][] getPossibleMoves(Board b) {
+	protected boolean[][] getPossibleMoves(ChessGameBoard b) {
 		// this implementation is overridden in subclasses
 		boolean[][] moves = new boolean[8][8];
 		return moves;

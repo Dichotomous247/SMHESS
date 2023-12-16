@@ -40,7 +40,7 @@ public class Pawn extends Piece {
 	
 	// overridden method. Makes a 2D array of booleans. False is no move is possible. True if possible to move there. 
 	// I have coded the possible moves for a pawn.
-	public boolean[][] getPossibleMoves(ChessGameBoard b) {
+	@Override public boolean[][] getPossibleMoves(ChessGameBoard b) {
 		int x = myX();
 		int y = myY();
 		//System.out.println("x:" + x + " y:"+y + " "+ getTeam());

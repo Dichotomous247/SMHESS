@@ -143,6 +143,12 @@ public class ChessGameBoard {
 						pawn.setNextPosition(this);
 						teamBoard.add(pawn.getNextPosition().getX(),pawn.getNextPosition().getY(),p);
 					}
+
+					/*if(p.getType() == Piece.Type.ROOK){
+						Rook rook = (Rook) p;
+						rook.setNextPosition(this);
+						teamBoard.add(rook.getNextPosition().getX(), rook.getNextPosition().getY(), p);
+					}*/
 					
 				}
 			}
@@ -286,10 +292,14 @@ public class ChessGameBoard {
 		for(int i=0;i<8;++i) {
 			for(int j=0;j<8;++j) {
 				if(proposedBoard.getPieces(j,i).size() > 0) {
-					Pawn p = (Pawn) proposedBoard.getPieces(j,i).get(0);
+					Pawn p = (Pawn) proposedBoard.getPieces(j,i).get(0); // @mrH can you explain this it's rather cryptic
 					p.setX(j);
 					p.setY(i);
 					board[i][j] = p;
+					/*Rook r = (Rook) proposedBoard.getPieces(j, i).get(0);
+					r.setX(j);
+					r.setY(i);
+					board[i][j] = r;*/
 				} else {
 					board[i][j] = null;
 				}
